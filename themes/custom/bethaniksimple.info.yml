@@ -1,0 +1,30 @@
+name: bethanik simple
+type: theme
+version: 9.3.16
+layout: page-layout
+description: 'bethanie <br> simple <br>Generated: Sun 26th, Jun, 2022 - 11:49'
+core_version_requirement: '^8 || ^9'
+base theme: false
+libraries:
+  - bethaniksimple/base-bethany-simple
+regions:
+  header: Header
+  highlighted: highlighted
+  primary_menu: 'primary menu'
+  secondary_menu: 'secondary menu'
+  featured_top: 'Featured top'
+  content: Content
+  sidebar_first: 'first sidebar'
+  sidebar_second: 'second sidebar'
+  featured_bottom_first:  'first featured bottom'
+  featured_bottom_second: 'second featured bottom'
+  featured_bottom_third: 'third featured bottom'
+  footer_first: 'first footer'
+  footer_second: 'second footer'
+  footer_third: 'third footer'
+  footer_fourth: 'fourth footer'
+  footer_fifth: 'fifth footer'
+  breadcrumb: breadcrumb
+  footer: Footer
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
