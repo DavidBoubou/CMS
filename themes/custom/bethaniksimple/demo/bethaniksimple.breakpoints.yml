@@ -1,0 +1,42 @@
+bethaniksimple.mobile:
+  label: mobile
+  mediaQuery: 'screen and (max-width: 768px)'
+  weight: 0
+  multipliers:
+   - 1x
+bethaniksimple.header:
+  label: header
+  mediaQuery: '(max-width: 992px)'
+  weight: 2
+  multipliers:
+    - 1x
+bethaniksimple.navbar:
+  label: navbar
+  mediaQuery: '(max-width: 1366px)'
+  weight: 2
+  multipliers:
+    - 1x
+bethaniksimple.mobile:
+  label: mobile
+  mediaQuery: '(max-width: 991px)'
+  weight: 1
+  multipliers:
+    - 1x
+bethaniksimple.hero:
+  label: hero
+  mediaQuery: '(min-width: 1024px)'
+  weight: 1
+  multipliers:
+    - 1x
+bethaniksimple.herocontent:
+  label: herocontent
+  mediaQuery: '(max-width: 768px)'
+  weight: 1
+  multipliers:
+    - 1x
+bethaniksimple.breadcrumbs:
+  label: breadcrumbs
+  mediaQuery: '(max-width: 768px)'
+  weight: 1
+  multipliers:
+    - 1x
