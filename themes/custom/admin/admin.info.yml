@@ -1,0 +1,6 @@
+name: Admin
+type: theme
+version: 9.3.16
+base theme: seven
+description: 'The default administration theme for Drupal 8 was designed with clean lines, simple blocks, and sans-serif font to emphasize the tools and tasks at hand.'
+core_version_requirement: '^8 || ^9'
