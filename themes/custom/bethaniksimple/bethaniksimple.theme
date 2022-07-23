@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\views\Form\ViewsForm;
+
+function bethaniksimple_preprocess_region(&$variables) {
+
+  // Create the $content variable that templates expect.
+  $variables['content'] = $variables['elements']['#children'];
+  $variables['region'] = $variables['elements']['#region'];
+}
