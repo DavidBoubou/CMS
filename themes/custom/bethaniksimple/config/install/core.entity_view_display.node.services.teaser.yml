@@ -1,0 +1,25 @@
+uuid: dd02ad79-526d-4567-86aa-b704d63f4234
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.services.field_description
+    - field.field.node.services.field_icon_dinami
+    - node.type.services
+  module:
+    - user
+id: node.services.teaser
+targetEntityType: node
+bundle: services
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_description: true
+  field_icon_dinami: true
+  langcode: true
