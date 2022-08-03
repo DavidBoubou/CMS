@@ -59,7 +59,12 @@
   <!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
+  {% if page.hero_side %}
+      {{ page.hero_side }}
+  {% endif %}
 
+
+  {#
   <section id="hero" class="d-flex align-items-center">
     <div class="container text-center position-relative aos-init aos-animate" data-aos="fade-in" data-aos-delay="200">
       <h1>Your New Online Presence with Bethany</h1>
@@ -67,6 +72,7 @@
       <a href="#about" class="btn-get-started scrollto">Get Started</a>
     </div>
     </section>
+    #}
   
   <!-- End Hero -->
 
@@ -78,8 +84,8 @@
 
   </main><!-- End #main -->
 
-
   <!-- ======= Footer ======= -->
+  
   <footer id="footer">
         {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth %}
           <div class="footer-top">
@@ -106,7 +112,6 @@
 
                 {% if page.footer_fourth %}
                   <div class="col-lg-4 col-md-6 footer-newsletter">
-                  {# contenu de la 4e page #}
                     {{ page.footer_fourth }}
                   </div>
                 {% endif %}
@@ -115,11 +120,20 @@
           </div>
         {% endif %}
 
-        {% if page.footer_fifth %}
-          <div class="social-links text-center text-md-right pt-3 pt-md-0">
-          {# content footer 5 wrapper1+2+n  #}
-            {{ page.footer_fifth }}
+        {% if  page.footer_fifth_copyright  or page.footer_fifth_reseau_sociaux %}
+          <div class="container d-md-flex py-4">
+          {% if page.footer_fifth_copyright %}
+              <div class="me-md-auto text-center text-md-start">
+                {{ page.footer_fifth_copyright  }}
+              </div>
+          {% endif %}
+
+          {% if page.footer_fifth_reseau_sociaux %}
+              <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                {{ page.footer_fifth_reseau_sociaux }}
+              </div>
+          {% endif %}
           </div>
         {% endif %}
-  </footer>
 
+  </footer>
