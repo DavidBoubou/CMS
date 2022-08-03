@@ -1,0 +1,23 @@
+uuid: 87b6d3d3-ac31-43ba-9bfe-937ba598ea69
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bouton
+    - node.type.portfolios
+  module:
+    - link
+id: node.portfolios.field_bouton
+field_name: field_bouton
+entity_type: node
+bundle: portfolios
+label: 'Project URL'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 2
+  link_type: 16
+field_type: link

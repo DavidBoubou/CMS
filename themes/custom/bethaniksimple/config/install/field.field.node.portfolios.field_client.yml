@@ -1,0 +1,29 @@
+uuid: 52bc3e5d-ef6e-44c6-9e5c-f4d82d2a6e7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_client
+    - node.type.marque
+    - node.type.portfolios
+id: node.portfolios.field_client
+field_name: field_client
+entity_type: node
+bundle: portfolios
+label: Client
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      marque: marque
+    sort:
+      field: field_image_ref
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

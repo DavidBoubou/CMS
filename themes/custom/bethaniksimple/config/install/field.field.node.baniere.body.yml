@@ -1,0 +1,23 @@
+uuid: dd0acd75-32c3-4bee-b632-256009b48de0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.baniere
+  module:
+    - text
+id: node.baniere.body
+field_name: body
+entity_type: node
+bundle: baniere
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

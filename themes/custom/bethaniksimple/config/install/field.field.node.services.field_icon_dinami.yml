@@ -1,0 +1,24 @@
+uuid: fe004d24-7dff-41ec-8302-51816d48bc03
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_icon_dinami
+    - node.type.services
+  module:
+    - text
+id: node.services.field_icon_dinami
+field_name: field_icon_dinami
+entity_type: node
+bundle: services
+label: icon-dinamique
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '<i class="bx bxl-dribbble"></i>'
+    format: full_html
+default_value_callback: ''
+settings: {  }
+field_type: text
