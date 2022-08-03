@@ -1,0 +1,20 @@
+uuid: 4c4840f1-d8db-4f97-9665-d6636154cf78
+langcode: en
+status: false
+dependencies:
+  theme:
+    - bethaniksimple
+_core:
+  default_config_hash: XRdb8LpbArVA6CpuuEZxzi50JIdjsJaCCZ5o3fH0Blk
+id: bethaniksimple_local_actions
+theme: bethaniksimple
+region: content
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

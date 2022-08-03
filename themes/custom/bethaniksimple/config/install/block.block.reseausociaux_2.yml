@@ -1,0 +1,25 @@
+uuid: 8831884e-bd3c-4ffd-8ca5-6db3339b0c35
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b1b0a49e-358c-4ef0-bb0a-3c6a7429d720'
+  module:
+    - block_content
+  theme:
+    - bethaniksimple
+id: reseausociaux_2
+theme: bethaniksimple
+region: footer_fifth_reseau_sociaux
+weight: 0
+provider: null
+plugin: 'block_content:b1b0a49e-358c-4ef0-bb0a-3c6a7429d720'
+settings:
+  id: 'block_content:b1b0a49e-358c-4ef0-bb0a-3c6a7429d720'
+  label: 'Réseau sociaux'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

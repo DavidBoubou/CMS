@@ -1,0 +1,25 @@
+uuid: e5d000a2-6da0-47a3-b2b8-c5f34eb7500e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4620e7bb-b7ce-48d6-8120-2530e08ce84f'
+  module:
+    - block_content
+  theme:
+    - bethaniksimple
+id: designedbybootstrapmade
+theme: bethaniksimple
+region: footer_fifth_copyright
+weight: -8
+provider: null
+plugin: 'block_content:4620e7bb-b7ce-48d6-8120-2530e08ce84f'
+settings:
+  id: 'block_content:4620e7bb-b7ce-48d6-8120-2530e08ce84f'
+  label: 'Designed by BootstrapMade'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

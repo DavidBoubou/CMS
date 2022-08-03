@@ -1,0 +1,25 @@
+uuid: 5cb65460-6213-4e99-af4d-8f234d499aaa
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:625fab05-8f32-4aaf-96d4-a38cba28541e'
+  module:
+    - block_content
+  theme:
+    - bethaniksimple
+id: bethany
+theme: bethaniksimple
+region: footer_first
+weight: 0
+provider: null
+plugin: 'block_content:625fab05-8f32-4aaf-96d4-a38cba28541e'
+settings:
+  id: 'block_content:625fab05-8f32-4aaf-96d4-a38cba28541e'
+  label: Bethany
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,30 @@
+uuid: 29b06eae-ff83-4a40-a865-e1f3274a7fe0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1b82e3de-0163-4a19-a93a-cc7c87caba29'
+  module:
+    - block_content
+    - system
+  theme:
+    - bethaniksimple
+id: intro
+theme: bethaniksimple
+region: content
+weight: -11
+provider: null
+plugin: 'block_content:1b82e3de-0163-4a19-a93a-cc7c87caba29'
+settings:
+  id: 'block_content:1b82e3de-0163-4a19-a93a-cc7c87caba29'
+  label: intro
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
