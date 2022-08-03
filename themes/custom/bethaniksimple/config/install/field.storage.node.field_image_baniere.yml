@@ -1,0 +1,30 @@
+uuid: 11659d3b-2ffb-4be8-bbff-c2ee682d9a5c
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - node
+id: node.field_image_baniere
+field_name: field_image_baniere
+entity_type: node
+type: image
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  default_image:
+    uuid: 7f9ed13c-95bf-4ae8-a71f-6dd79c4dd949
+    alt: hero-bethanik
+    title: 'hero bethanik'
+    width: 1920
+    height: 1280
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

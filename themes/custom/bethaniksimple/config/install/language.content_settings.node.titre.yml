@@ -1,0 +1,11 @@
+uuid: 5691fc15-8f74-4453-97cb-f70a5b29bf17
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.titre
+id: node.titre
+target_entity_type_id: node
+target_bundle: titre
+default_langcode: und
+language_alterable: false
