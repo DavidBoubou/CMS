@@ -1,0 +1,7 @@
+name: bethanik simple
+type: module
+version: 9.3.16
+description: 'bethanie <br> simple <br>Generated: Sun 26th, Jun, 2022 - 11:49'
+core_version_requirement: '^8 || ^9'
+project: 'bethanik template'
+
