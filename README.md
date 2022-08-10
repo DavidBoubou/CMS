@@ -14,6 +14,7 @@
 
 
 ## Bonnes pratiques création d'un thème Drupal
+
     # Gérer le cache pour un serveur local
 
     # Création d'un thème Drupal: l'architecture du thème Drupal est basé sur le thème core/thème/classy, et les templates complémentaires sont basés sur le core de        Drupal 
@@ -27,6 +28,8 @@
     # Identifier les roles utilisateurs du cahier de charges pour mettre a jour le core de Drupal. 
 
     # lire les commentaires et la documentation Drupal.
+    
+    # Désactiver le debuguage.
 
 
 
