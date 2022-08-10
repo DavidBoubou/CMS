@@ -3,6 +3,7 @@
 
 ## Installation du  thème Bethanik sur Drupal 9.3.14
 
+    # Installer et activer le theme Bethanik.
     # Mettre a jour la version Drupal de bethanie si nécessaires et les modules associées.
     # Importation de la base données Elixir sur Mysql:  
     # Importation de la base données Elixir (config/BDD/Elixirv2.sql) sur Mysql:  
@@ -15,7 +16,7 @@
 ## Bonnes pratiques création d'un thème Drupal
     # Gérer le cache pour un serveur local
 
-    # Création d'un thème Drupal: l'architecture du thème Drupal est basé sur le thème core/thème/classy, et les templates complémentaires sont basés sur  
+    # Création d'un thème Drupal: l'architecture du thème Drupal est basé sur le thème core/thème/classy, et les templates complémentaires sont basés sur le core de        Drupal 
 
     # Identifié les types de contenue sur la maquette et les créer.
     # Créer les vues et les modes de vues nécessaires a l'afichage des type de contenu.
