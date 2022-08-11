@@ -1,0 +1,20 @@
+uuid: 93469c2b-297c-4ad5-ae2e-7bf0a1adb97d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.portfolios
+  module:
+    - path
+id: node.portfolios.path
+field_name: path
+entity_type: node
+bundle: portfolios
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

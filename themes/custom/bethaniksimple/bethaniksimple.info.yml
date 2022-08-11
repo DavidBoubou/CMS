@@ -6,13 +6,14 @@ description: 'bethanie <br> simple <br>Generated: Sun 26th, Jun, 2022 - 11:49'
 core_version_requirement: '^8 || ^9'
 base theme: false
 libraries:
-  - bethaniksimple/base-bethany-simple
+    - bethaniksimple/base-bethany-simple
 regions:
   header: Header
   highlighted: highlighted
   primary_menu: 'primary menu'
   secondary_menu: 'secondary menu'
   featured_top: 'Featured top'
+  hero_side: 'hero side'
   content: Content
   sidebar_first: 'first sidebar'
   sidebar_second: 'second sidebar'
@@ -24,6 +25,8 @@ regions:
   footer_third: 'third footer'
   footer_fourth: 'fourth footer'
   footer_fifth: 'fifth footer'
+  footer_fifth_copyright: 'fifth footer copyright'
+  footer_fifth_reseau_sociaux: 'fifth footer reseau sociaux'
   breadcrumb: breadcrumb
   footer: Footer
   page_top: 'Page top'

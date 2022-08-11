@@ -1,0 +1,17 @@
+uuid: 41e7c8cd-cff8-407b-a4bc-b19b465e7970
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: titre
+type: titre
+description: 'Magnam dolores commodi suscipit nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

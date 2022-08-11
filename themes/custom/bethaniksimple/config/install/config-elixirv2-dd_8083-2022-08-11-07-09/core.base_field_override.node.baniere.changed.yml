@@ -1,0 +1,18 @@
+uuid: 10076490-d64f-459c-a4ce-90e4153334fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.baniere
+id: node.baniere.changed
+field_name: changed
+entity_type: node
+bundle: baniere
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

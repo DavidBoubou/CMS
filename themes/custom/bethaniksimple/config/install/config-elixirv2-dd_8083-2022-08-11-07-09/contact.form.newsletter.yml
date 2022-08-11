@@ -1,0 +1,12 @@
+uuid: c7cfe9bc-7b4e-4853-94bb-d2adc54c9c3b
+langcode: en
+status: true
+dependencies: {  }
+id: newsletter
+label: Newsletter
+recipients:
+  - david.boudine0@gmail.com
+reply: ''
+weight: 0
+message: ''
+redirect: /

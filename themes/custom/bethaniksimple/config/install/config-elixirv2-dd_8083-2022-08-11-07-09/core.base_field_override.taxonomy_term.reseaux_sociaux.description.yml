@@ -1,0 +1,20 @@
+uuid: 02638e74-d50e-48bd-8c53-f7eca5372992
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.reseaux_sociaux
+  module:
+    - text
+id: taxonomy_term.reseaux_sociaux.description
+field_name: description
+entity_type: taxonomy_term
+bundle: reseaux_sociaux
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,22 @@
+uuid: 3e92cb3b-7a60-47c3-8aaf-a94ad04eafed
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.reseaux_sociaux
+id: taxonomy_term.reseaux_sociaux.status
+field_name: status
+entity_type: taxonomy_term
+bundle: reseaux_sociaux
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,8 @@
+uuid: ba88cfda-0b49-4ca4-8856-23b598f10ebc
+langcode: en
+status: true
+dependencies: {  }
+id: html_block
+label: 'html block'
+revision: 0
+description: 'Block restrict html with all class.'

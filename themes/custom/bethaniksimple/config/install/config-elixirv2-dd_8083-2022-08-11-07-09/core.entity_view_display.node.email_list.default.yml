@@ -1,0 +1,24 @@
+uuid: f5706a62-4040-4ce4-9ecf-c3addb62b120
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.email_list.field_email
+    - node.type.email_list
+  module:
+    - user
+id: node.email_list.default
+targetEntityType: node
+bundle: email_list
+mode: default
+content:
+  field_email:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  links: true

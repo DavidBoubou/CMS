@@ -1,0 +1,25 @@
+uuid: 11a1597e-6aec-4971-a833-096a328c580a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.marque.field_image_ref
+    - node.type.marque
+  module:
+    - user
+id: node.marque.default
+targetEntityType: node
+bundle: marque
+mode: default
+content:
+  field_image_ref:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  links: true

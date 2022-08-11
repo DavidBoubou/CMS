@@ -1,0 +1,20 @@
+uuid: a42951af-2387-448e-84d5-027f3607e4d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.contact
+  module:
+    - path
+id: node.contact.path
+field_name: path
+entity_type: node
+bundle: contact
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

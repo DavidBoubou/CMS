@@ -1,0 +1,18 @@
+uuid: 74225255-6f61-473b-8f1a-fa5aa40c1735
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.email_list
+id: node.email_list.created
+field_name: created
+entity_type: node
+bundle: email_list
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

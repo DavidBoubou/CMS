@@ -1,0 +1,22 @@
+uuid: aeb0125b-7905-42bb-90c4-6f585a6cd6b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.baniere
+id: node.baniere.sticky
+field_name: sticky
+entity_type: node
+bundle: baniere
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

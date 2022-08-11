@@ -1,0 +1,32 @@
+uuid: 5d19cd10-2003-4230-b513-eebe9851374e
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.newsletter
+    - field.field.contact_message.newsletter.field_email
+id: contact_message.newsletter.default
+targetEntityType: contact_message
+bundle: newsletter
+mode: default
+content:
+  field_email:
+    type: email_default
+    weight: 0
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  mail:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  copy: true
+  langcode: true
+  message: true
+  name: true
+  preview: true
+  subject: true

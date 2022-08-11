@@ -1,0 +1,17 @@
+uuid: 6b3850e9-4401-4fd2-9f0d-434999658a55
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: marque
+type: marque
+description: 'Liste des marques des clients de bethany'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

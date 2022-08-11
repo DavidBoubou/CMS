@@ -1,0 +1,22 @@
+uuid: a5f3f326-6e86-4617-a2fa-95729fa0e4b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.baniere
+id: node.baniere.promote
+field_name: promote
+entity_type: node
+bundle: baniere
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

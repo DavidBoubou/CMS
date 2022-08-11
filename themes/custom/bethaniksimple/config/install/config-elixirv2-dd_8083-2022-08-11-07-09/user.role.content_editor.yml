@@ -1,0 +1,101 @@
+uuid: 9e2f52db-7188-4360-87a8-cbab7770692f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.article
+    - node.type.baniere
+    - node.type.contact
+    - node.type.marque
+    - node.type.page
+    - node.type.portfolios
+    - node.type.services
+    - node.type.team
+    - node.type.testimonials
+    - taxonomy.vocabulary.reseaux_sociaux
+    - taxonomy.vocabulary.tags
+  module:
+    - comment
+    - contextual
+    - file
+    - node
+    - path
+    - search
+    - system
+    - taxonomy
+    - toolbar
+    - tour
+_core:
+  default_config_hash: Wur9kcEOwY1Jal81NssKnz3RhVJxAvBwyWQBGcA_1Go
+id: content_editor
+label: 'Éditeur de contenu'
+weight: 2
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'access tour'
+  - 'access user profiles'
+  - 'administer url aliases'
+  - 'change own username'
+  - 'create article content'
+  - 'create baniere content'
+  - 'create contact content'
+  - 'create marque content'
+  - 'create page content'
+  - 'create services content'
+  - 'create team content'
+  - 'create terms in tags'
+  - 'create testimonials content'
+  - 'create url aliases'
+  - 'delete any article content'
+  - 'delete any baniere content'
+  - 'delete any marque content'
+  - 'delete any page content'
+  - 'delete any portfolios content'
+  - 'delete any services content'
+  - 'delete any team content'
+  - 'delete any testimonials content'
+  - 'delete article revisions'
+  - 'delete own article content'
+  - 'delete own baniere content'
+  - 'delete own contact content'
+  - 'delete own marque content'
+  - 'delete own page content'
+  - 'delete own portfolios content'
+  - 'delete own services content'
+  - 'delete own team content'
+  - 'delete own testimonials content'
+  - 'delete page revisions'
+  - 'delete terms in reseaux_sociaux'
+  - 'delete terms in tags'
+  - 'edit any article content'
+  - 'edit any baniere content'
+  - 'edit any contact content'
+  - 'edit any marque content'
+  - 'edit any page content'
+  - 'edit any portfolios content'
+  - 'edit any services content'
+  - 'edit any team content'
+  - 'edit any testimonials content'
+  - 'edit own article content'
+  - 'edit own baniere content'
+  - 'edit own comments'
+  - 'edit own contact content'
+  - 'edit own marque content'
+  - 'edit own page content'
+  - 'edit own portfolios content'
+  - 'edit own services content'
+  - 'edit own team content'
+  - 'edit own testimonials content'
+  - 'edit terms in reseaux_sociaux'
+  - 'edit terms in tags'
+  - 'revert all revisions'
+  - 'use advanced search'
+  - 'view all revisions'
+  - 'view own unpublished content'
+  - 'view the administration theme'

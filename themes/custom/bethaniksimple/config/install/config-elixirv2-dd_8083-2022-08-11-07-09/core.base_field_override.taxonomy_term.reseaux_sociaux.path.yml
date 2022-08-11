@@ -1,0 +1,20 @@
+uuid: 02e010ac-80e6-4bb3-b35c-23c541de20b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.reseaux_sociaux
+  module:
+    - path
+id: taxonomy_term.reseaux_sociaux.path
+field_name: path
+entity_type: taxonomy_term
+bundle: reseaux_sociaux
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

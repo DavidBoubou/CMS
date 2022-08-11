@@ -1,0 +1,11 @@
+uuid: 3f45cb91-ae4c-49ce-9d13-b2ebfa5ab68b
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.newsletter
+id: contact_message.newsletter
+target_entity_type_id: contact_message
+target_bundle: newsletter
+default_langcode: site_default
+language_alterable: false

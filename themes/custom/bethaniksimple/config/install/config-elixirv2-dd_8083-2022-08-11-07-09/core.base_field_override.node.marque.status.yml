@@ -1,0 +1,22 @@
+uuid: 8e3b3c4a-2862-40d0-a469-a0129b97b0e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.marque
+id: node.marque.status
+field_name: status
+entity_type: node
+bundle: marque
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

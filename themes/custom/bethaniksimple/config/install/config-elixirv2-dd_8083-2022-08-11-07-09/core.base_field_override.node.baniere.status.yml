@@ -1,0 +1,22 @@
+uuid: 395b8386-29d6-4c19-9a31-b630a751e134
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.baniere
+id: node.baniere.status
+field_name: status
+entity_type: node
+bundle: baniere
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

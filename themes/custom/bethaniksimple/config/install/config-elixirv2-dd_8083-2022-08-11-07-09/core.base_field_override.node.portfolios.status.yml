@@ -1,0 +1,22 @@
+uuid: 1e52e829-8110-4ca0-88d3-d40975026640
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.portfolios
+id: node.portfolios.status
+field_name: status
+entity_type: node
+bundle: portfolios
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

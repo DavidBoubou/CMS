@@ -1,0 +1,38 @@
+uuid: 9f89d05d-afda-41e1-8156-a620c7f0b441
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.services.field_description
+    - field.field.node.services.field_icon_dinami
+    - node.type.services
+  module:
+    - text
+    - user
+id: node.services.full
+targetEntityType: node
+bundle: services
+mode: full
+content:
+  field_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_icon_dinami:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

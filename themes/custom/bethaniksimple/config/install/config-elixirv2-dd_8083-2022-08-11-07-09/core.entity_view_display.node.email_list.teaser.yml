@@ -1,0 +1,23 @@
+uuid: 7c25bc1f-5f9c-461d-bae1-9bdfeb0a8c68
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.email_list.field_email
+    - node.type.email_list
+  module:
+    - user
+id: node.email_list.teaser
+targetEntityType: node
+bundle: email_list
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_email: true
+  langcode: true

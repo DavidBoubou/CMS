@@ -1,0 +1,18 @@
+uuid: 8850e375-6050-47d9-8c46-5088ab306813
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.email_list
+id: node.email_list.changed
+field_name: changed
+entity_type: node
+bundle: email_list
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

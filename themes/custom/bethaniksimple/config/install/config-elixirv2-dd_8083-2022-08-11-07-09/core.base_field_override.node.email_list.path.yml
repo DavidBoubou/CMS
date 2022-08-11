@@ -1,0 +1,20 @@
+uuid: 9fc58f11-4f9e-40f2-8a57-abc1d8264b11
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.email_list
+  module:
+    - path
+id: node.email_list.path
+field_name: path
+entity_type: node
+bundle: email_list
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

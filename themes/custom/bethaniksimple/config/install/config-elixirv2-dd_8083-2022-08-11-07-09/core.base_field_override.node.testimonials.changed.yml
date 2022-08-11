@@ -1,0 +1,18 @@
+uuid: 51b2d482-ee6a-40d2-a10c-70b7ba8df8ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.testimonials
+id: node.testimonials.changed
+field_name: changed
+entity_type: node
+bundle: testimonials
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

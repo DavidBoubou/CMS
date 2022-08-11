@@ -1,0 +1,25 @@
+uuid: d5ac621f-c3ad-4bda-8101-3ac2a8ac7da8
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.o
+  module:
+    - system
+  theme:
+    - bethaniksimple
+id: ourservices
+theme: bethaniksimple
+region: footer_third
+weight: 0
+provider: null
+plugin: 'system_menu_block:o'
+settings:
+  id: 'system_menu_block:o'
+  label: 'Our services'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

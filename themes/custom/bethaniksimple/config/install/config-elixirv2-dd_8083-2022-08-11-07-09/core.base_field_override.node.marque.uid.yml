@@ -1,0 +1,20 @@
+uuid: ec19e5f9-6f3b-4e35-95b0-f89bf990ea4f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.marque
+id: node.marque.uid
+field_name: uid
+entity_type: node
+bundle: marque
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

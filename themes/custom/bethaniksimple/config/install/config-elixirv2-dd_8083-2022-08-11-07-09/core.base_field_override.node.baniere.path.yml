@@ -1,0 +1,20 @@
+uuid: 5d359dec-2247-485c-b2f2-779a065c8bec
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.baniere
+  module:
+    - path
+id: node.baniere.path
+field_name: path
+entity_type: node
+bundle: baniere
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

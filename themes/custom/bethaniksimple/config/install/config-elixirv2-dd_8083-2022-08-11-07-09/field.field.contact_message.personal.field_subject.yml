@@ -1,0 +1,21 @@
+uuid: 17d7698e-7a5d-47b8-8414-0a9a8ca345a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.personal
+    - field.storage.contact_message.field_subject
+  module:
+    - text
+id: contact_message.personal.field_subject
+field_name: field_subject
+entity_type: contact_message
+bundle: personal
+label: Subject
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

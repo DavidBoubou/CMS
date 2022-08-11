@@ -1,0 +1,20 @@
+uuid: f9aecc89-7ec1-4743-85ba-9c02618e876f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.marque
+  module:
+    - path
+id: node.marque.path
+field_name: path
+entity_type: node
+bundle: marque
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

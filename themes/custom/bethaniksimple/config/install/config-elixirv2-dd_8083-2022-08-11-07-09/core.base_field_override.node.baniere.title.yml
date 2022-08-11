@@ -1,0 +1,18 @@
+uuid: 12c0f771-402a-49a2-85ba-abbf6a9dcc80
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.baniere
+id: node.baniere.title
+field_name: title
+entity_type: node
+bundle: baniere
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

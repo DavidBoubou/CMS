@@ -1,0 +1,17 @@
+uuid: 810de558-2e87-4035-9142-5f73d58a201d
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Services
+type: services
+description: 'Services offerent par Bethany'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false
