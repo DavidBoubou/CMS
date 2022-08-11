@@ -8,6 +8,7 @@
     # Importation de la base données Elixir sur Mysql:  
     # Importation de la base données Elixir (config/BDD/Elixirv2.sql) sur Mysql:  
     # Administrateur 'root' Mot de passe 'root'
+    # CEO 'Walter White' / 'walter@gmail.com' Mot de passe 'root'
     # Réaliser la synchronisation des données a partir du dossier config/install/ config-elixirv2-dd 8083-2022-07-29-18-11 (si pb rencontré)
 
     # Importer la traduction Francaise du site situé dans config/traduction/drupal-9.3.21.fr.po
@@ -32,7 +33,10 @@
     # Désactiver le debuguage.
 
 
+## Utilisateur back office
 
+    # Administrateur 'root' Mot de passe 'root'
+    # CEO 'Walter White' / 'walter@gmail.com' Mot de passe 'root'
 
 
 # CMS
