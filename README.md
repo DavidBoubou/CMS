@@ -38,6 +38,13 @@
     # Administrateur 'root' Mot de passe 'root'
     # CEO 'Walter White' / 'walter@gmail.com' Mot de passe 'root'
 
-
+## Corrections futur
+    
+    # Redimensioner l'image
+    # Cooriger le diaporama des détails des portfolios.
+    # Habiller la section Team,Portfolio et Testimonials
+    # Ajouter le formulaire de contact et de Newsletter
+    # Mettre a jour les animations JS.
+    
 # CMS
 Modules Développé pour les CMS Drupal, Prestashop, Wordpress.
