@@ -1,0 +1,11 @@
+uuid: 12b253ae-c5d3-4056-8467-984742f415a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.reseaux_sociaux
+id: taxonomy_term.reseaux_sociaux
+target_entity_type_id: taxonomy_term
+target_bundle: reseaux_sociaux
+default_langcode: und
+language_alterable: false

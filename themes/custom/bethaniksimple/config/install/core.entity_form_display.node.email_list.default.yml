@@ -1,0 +1,42 @@
+uuid: 45cf8602-06da-47ec-a078-6f56cbe7fe0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.email_list.field_email
+    - node.type.email_list
+id: node.email_list.default
+targetEntityType: node
+bundle: email_list
+mode: default
+content:
+  field_email:
+    type: email_default
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 2
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true

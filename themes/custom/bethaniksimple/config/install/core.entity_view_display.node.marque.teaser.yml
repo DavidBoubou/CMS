@@ -1,0 +1,27 @@
+uuid: bef42312-0698-4fd0-b5ee-029f325925d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.marque.field_image_ref
+    - node.type.marque
+  module:
+    - user
+id: node.marque.teaser
+targetEntityType: node
+bundle: marque
+mode: teaser
+content:
+  field_image_ref:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  links: true

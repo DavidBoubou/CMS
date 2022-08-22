@@ -1,0 +1,29 @@
+uuid: bc095a3b-4a14-4f3c-965d-85430803ed62
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.baniere_view
+  module:
+    - system
+    - views
+  theme:
+    - bethaniksimple
+id: views_block__baniere_view_block_1_2
+theme: bethaniksimple
+region: content
+weight: -10
+provider: null
+plugin: 'views_block:baniere_view-block_1'
+settings:
+  id: 'views_block:baniere_view-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

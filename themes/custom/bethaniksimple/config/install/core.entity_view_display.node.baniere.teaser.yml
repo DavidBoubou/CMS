@@ -1,0 +1,51 @@
+uuid: cf13b4c1-40ab-4719-8fcb-8e78741624f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.baniere.body
+    - field.field.node.baniere.field_bouton
+    - field.field.node.baniere.field_image_baniere
+    - node.type.baniere
+  module:
+    - image
+    - link
+    - text
+    - user
+id: node.baniere.teaser
+targetEntityType: node
+bundle: baniere
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_bouton:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_image_baniere:
+    type: image_url
+    label: hidden
+    settings:
+      image_style: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  links: true

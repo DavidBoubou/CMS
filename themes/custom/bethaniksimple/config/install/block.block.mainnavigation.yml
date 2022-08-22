@@ -1,0 +1,25 @@
+uuid: 290c6d9c-5f5c-4ac6-a429-fd319623d651
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - bethaniksimple
+id: mainnavigation
+theme: bethaniksimple
+region: footer_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Useful Links'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,10 +1,11 @@
 {#
 /**
  * @file
- * Theme override to display a single page.
+ * Bartik's theme implementation to display a single page.
  *
  * The doctype, html, head and body tags are not in this template. Instead they
- * can be found in the html.html.twig template in this directory.
+ * can be found in the html.html.twig template normally located in the
+ * core/modules/system directory.
  *
  * Available variables:
  *
@@ -28,60 +29,102 @@
  *
  * Regions:
  * - page.header: Items for the header region.
+ * - page.highlighted: Items for the highlighted region.
  * - page.primary_menu: Items for the primary menu region.
  * - page.secondary_menu: Items for the secondary menu region.
- * - page.highlighted: Items for the highlighted content region.
- * - page.help: Dynamic help text, mostly for admin pages.
+ * - page.featured_top: Items for the featured top region.
  * - page.content: The main content of the current page.
  * - page.sidebar_first: Items for the first sidebar.
  * - page.sidebar_second: Items for the second sidebar.
- * - page.footer: Items for the footer region.
+ * - page.featured_bottom_first: Items for the first featured bottom region.
+ * - page.featured_bottom_second: Items for the second featured bottom region.
+ * - page.featured_bottom_third: Items for the third featured bottom region.
+ * - page.footer_first: Items for the first footer column.
+ * - page.footer_second: Items for the second footer column.
+ * - page.footer_third: Items for the third footer column.
+ * - page.footer_fourth: Items for the fourth footer column.
+ * - page.footer_fifth: Items for the fifth footer column.
  * - page.breadcrumb: Items for the breadcrumb region.
  *
  * @see template_preprocess_page()
  * @see html.html.twig
  */
 #}
-<div class="layout-container">
 
-  <header role="banner">
-    {{ page.header }}
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+        {{ page.header }}
   </header>
+  <!-- End Header -->
 
-  {{ page.primary_menu }}
-  {{ page.secondary_menu }}
-
-  {{ page.breadcrumb }}
-
-  {{ page.highlighted }}
-
-  {{ page.help }}
-
-  <main role="main">
-    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
-
-    <div class="layout-content">
-      {{ page.content }}
-    </div>{# /.layout-content #}
-
-    {% if page.sidebar_first %}
-      <aside class="layout-sidebar-first" role="complementary">
-        {{ page.sidebar_first }}
-      </aside>
-    {% endif %}
-
-    {% if page.sidebar_second %}
-      <aside class="layout-sidebar-second" role="complementary">
-        {{ page.sidebar_second }}
-      </aside>
-    {% endif %}
-
-  </main>
-
-  {% if page.footer %}
-    <footer role="contentinfo">
-      {{ page.footer }}
-    </footer>
+  <!-- ======= Hero Section ======= -->
+  {% if page.hero_side %}
+      {{ page.hero_side }}
   {% endif %}
 
-</div>{# /.layout-container #}
+
+  
+  <!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ### base content -->
+  
+    {{ page.content }}
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  
+  <footer id="footer">
+        {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth %}
+          <div class="footer-top">
+            <div class="container">
+              <div class="row">
+
+                {% if page.footer_first %}
+                  <div class="col-lg-3 col-md-6 footer-contact">
+                    {{ page.footer_first }}
+                  </div>
+                {% endif %}
+
+                {% if page.footer_second %}
+                  <div class="col-lg-2 col-md-6 footer-links">
+                    {{ page.footer_second }}
+                  </div>
+                {% endif %}
+
+                {% if page.footer_third %}
+                  <div class="col-lg-3 col-md-6 footer-links">
+                    {{ page.footer_third }}
+                  </div>
+                {% endif %}
+
+                {% if page.footer_fourth %}
+                  <div class="col-lg-4 col-md-6 footer-newsletter">
+                    {{ page.footer_fourth }}
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        {% endif %}
+
+        {% if  page.footer_fifth_copyright  or page.footer_fifth_reseau_sociaux %}
+          <div class="container d-md-flex py-4">
+          {% if page.footer_fifth_copyright %}
+              <div class="me-md-auto text-center text-md-start">
+                {{ page.footer_fifth_copyright  }}
+              </div>
+          {% endif %}
+
+          {% if page.footer_fifth_reseau_sociaux %}
+              <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                {{ page.footer_fifth_reseau_sociaux }}
+              </div>
+          {% endif %}
+          </div>
+        {% endif %}
+
+  </footer>

@@ -1,0 +1,49 @@
+uuid: fc7bcc5d-8a7f-4a77-9aa5-bc85ec54f5fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.baniere.body
+    - field.field.node.baniere.field_bouton
+    - field.field.node.baniere.field_image_baniere
+    - node.type.baniere
+  module:
+    - image
+    - link
+    - text
+    - user
+id: node.baniere.default
+targetEntityType: node
+bundle: baniere
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_bouton:
+    type: link_separate
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_image_baniere:
+    type: image_url
+    label: hidden
+    settings:
+      image_style: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  links: true

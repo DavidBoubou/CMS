@@ -1,0 +1,11 @@
+uuid: 9cf438f9-e026-43f0-883f-b06b90f651bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.marque
+id: node.marque
+target_entity_type_id: node
+target_bundle: marque
+default_langcode: und
+language_alterable: false

@@ -1,0 +1,11 @@
+uuid: 7f678931-5d4c-410d-8b1c-3e2bf8910415
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.baniere
+id: node.baniere
+target_entity_type_id: node
+target_bundle: baniere
+default_langcode: und
+language_alterable: false

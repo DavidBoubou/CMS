@@ -1,0 +1,37 @@
+uuid: 6cd1d533-2ed2-40e8-97f9-25e49a8d5dce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.services.field_description
+    - field.field.node.services.field_icon_dinami
+    - node.type.services
+  module:
+    - text
+    - user
+id: node.services.default
+targetEntityType: node
+bundle: services
+mode: default
+content:
+  field_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_icon_dinami:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

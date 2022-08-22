@@ -1,0 +1,30 @@
+uuid: 4d1c7527-876b-4859-8233-7b838be238da
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e82c4f88-0936-437a-bb84-7b95a9474501'
+  module:
+    - block_content
+    - system
+  theme:
+    - bethaniksimple
+id: whychoosebethanyforyourcompanywebsite
+theme: bethaniksimple
+region: content
+weight: -9
+provider: null
+plugin: 'block_content:e82c4f88-0936-437a-bb84-7b95a9474501'
+settings:
+  id: 'block_content:e82c4f88-0936-437a-bb84-7b95a9474501'
+  label: 'Why Choose Bethany for your company website?'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

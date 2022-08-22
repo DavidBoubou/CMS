@@ -1,0 +1,20 @@
+uuid: 0aba8c23-a4c1-471a-b849-41910082fe20
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_icon_dinami
+field_name: field_icon_dinami
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

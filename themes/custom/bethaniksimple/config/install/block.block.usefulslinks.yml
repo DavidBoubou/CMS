@@ -1,0 +1,25 @@
+uuid: a633a9f0-5331-4918-ad51-9f8adee8fec9
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.usefuls
+  module:
+    - system
+  theme:
+    - bethaniksimple
+id: usefulslinks
+theme: bethaniksimple
+region: footer_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:usefuls'
+settings:
+  id: 'system_menu_block:usefuls'
+  label: 'Usefuls Links'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }
