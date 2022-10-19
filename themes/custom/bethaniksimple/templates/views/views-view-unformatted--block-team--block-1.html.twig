@@ -1,0 +1,68 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ *
+ * @ingroup themeable
+ */
+#}
+
+<section id="team" class="team">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="section-title aos-init aos-animate" data-aos="fade-right">
+          {% if title %}
+            <h3>{{ title }}</h3>
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="col-lg-8">
+        <div class="row">
+
+      {% for key, row in rows %}
+        {%
+          set row_classes = [
+            default_row_class ? 'views-row',
+          ]
+        %}
+                    <div class="col-lg-6 mt-4 mt-lg-0">
+                      <div class="member aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="pic">
+                          <img src= {{ view.style_plugin.getField(key, 'user_picture') }} class="img-fluid" alt="">
+                        </div>
+
+                        <div class="member-info">
+                          <h4> {{ view.style_plugin.getField(key, 'field_nom') }}</h4>
+                          <span> {{ view.style_plugin.getField(key, 'field_nom_utilisateur') }}</span>
+                          <p> {{ view.style_plugin.getField(key, 'field_description_') }}</p>
+
+                          <div class="social">
+                            <a href= {{ view.style_plugin.getField(key, 'field_twiiter')}}><i class="ri-twitter-fill"></i></a>
+                            <a href= {{ view.style_plugin.getField(key, 'field_facebbok')}}><i class="ri-facebook-fill"></i></a>
+                            <a href= {{ view.style_plugin.getField(key, 'field_lin') }}><i class="ri-instagram-fill"></i></a>
+                            <a href= {{ view.style_plugin.getField(key, 'field_linked_in')}}> <i class="ri-linkedin-box-fill"></i> </a>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+      {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>

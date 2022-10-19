@@ -27,13 +27,35 @@
  * @ingroup themeable
  */
 #}
-<div{{ attributes }}>
+<section id="testimonials" class="testimonials section-bg">
+      <div class="container">
+        <div class="row">
+<div class="col-lg-4">
+  <div class="section-title aos-init aos-animate" data-aos="fade-right">
   {{ title_prefix }}
   {% if label %}
     <h2{{ title_attributes }}>{{ label }}</h2>
   {% endif %}
   {{ title_suffix }}
+  </div>
+  </div>
   {% block content %}
-    {{ content }}
+  <div class="col-lg-8 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+    <div class="testimonials-slider swiper swiper-initialized swiper-horizontal swiper-pointer-events aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">         
+  {#    <div class="swiper-wrapper" style="transform: translate3d(-1512px, 0px, 0px); transition-duration: 600ms;" id="swiper-wrapper-aee010e99cf45974f" aria-live="off">
+        <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="3" style="width: 358px; margin-right: 20px;" role="group" aria-label="4 / 5">
+  #}
+            {{ content }}
+ {#       </div>
+      </div>
+      #}
+{#
+    <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span></div>
+    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+#}
+    </div>
+  </div>   
   {% endblock %}
-</div>
+  </div>
+  </div>
+  </section>

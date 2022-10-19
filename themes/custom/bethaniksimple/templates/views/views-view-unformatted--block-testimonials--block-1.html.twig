@@ -1,0 +1,48 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% if title %}
+  <h3>{{ title }}</h3>
+{% endif %}
+{% for key,row in rows %}
+  {%
+    set row_classes = [
+      default_row_class ? 'views-row',
+    ]
+  %}
+
+
+
+<div class="swiper-slide" data-swiper-slide-index={{key}} style="width: 358px; margin-right: 20px;" role="group" aria-label="5 / 5">
+                  <div class="testimonial-item">
+                    <p>
+                      <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                          {{ view.style_plugin.getField(key, 'body') }}
+                      <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                    </p>
+                    <img src={{ view.style_plugin.getField(key, 'field_profil_utilisateur') }} class="testimonial-img" alt="">
+                    <h3> {{ view.style_plugin.getField(key, 'field_nom_utilisateur') }}</h3>
+                    <h4>{{ view.style_plugin.getField(key, 'field_description') }}</h4>
+                  </div>
+</div>
+
+
+
+{% endfor %}

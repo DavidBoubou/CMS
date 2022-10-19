@@ -42,6 +42,7 @@
 
 <!-- a href="#about" class="btn-get-started scrollto"> -->
 
+{#
 {% if label_hidden %}
   {% if multiple %}
       {% for item in items %}
@@ -49,7 +50,7 @@
       {% endfor %}
   {% else %}
     {% for item in items %}
-       <a{{ item.attributes }} class="btn-get-started scrollto" >2.{{ item.content }}</a> 
+       <a{{ item.attributes }} class="btn-get-started scrollto" >{{ item.content }}</a> 
     {% endfor %}
   {% endif %}
 {% else %}
@@ -58,3 +59,8 @@
     {% endfor %}
 {% endif %}
 
+#}
+
+    {% for item in items %}
+      {{ item.content }} 
+    {% endfor %}
